@@ -1,0 +1,367 @@
+body
+{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+* {
+    box-sizing: border-box;
+  }
+h1, h2, h3, h4, ul, li, p
+{
+    margin: 0;
+    padding: 0;
+}
+nav 
+{
+    background-color: #686868;
+    text-align: center;
+}
+.menu
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+    min-height: 30px;
+    line-height: 100%;
+    text-decoration: none;
+}
+
+.menu a
+{
+    text-decoration: none;
+    color: white;
+}
+.menu a:hover
+{
+    color: #3d3d3d;
+
+}
+header 
+{
+    margin: auto;
+}
+.logo_containter
+{
+    margin: 30px;
+}
+.logo_containter img 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.main_header
+{
+    margin: auto;
+    text-align: center; 
+    width: 70%;
+    border-bottom: 1px solid #ced4da;
+}
+#pageTitle
+{
+    padding: 20px;
+}
+main 
+{
+    min-height: 500px;
+    background-color:#f5f5f5;
+    margin: auto;
+}
+#mainPage 
+{
+    background-color:#f5f5f5;
+    margin: auto;
+}
+.form_line 
+{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #686868;
+}
+input, select
+{
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    color: #686868;
+}
+input:disabled, select:disabled
+{
+    background-color: #f5f5f5;
+    border: 0px solid #ced4da;
+    border-radius: 0px;
+    font-weight: bold;
+    color: #686868;
+}
+input:focus, textarea:focus, select:focus
+{
+    outline: none;
+}
+input:-webkit-autofill 
+{ 
+    -webkit-text-fill-color: #686868;
+    -webkit-background-clip: text;
+}
+#status
+{
+    display: inline-block;
+    width: auto;
+    
+}
+select 
+{
+    padding: 10px;
+}
+
+#verification
+{
+    padding: 20px;
+}
+.save, .confirm
+{
+    background-color: green;
+    color: white;
+}
+.save:hover, .confirm:hover
+{
+    background-color: grey;
+    color: white;
+}
+.cancel, .edit
+{
+    background-color: red;
+    color: white;
+}
+.cancel:hover, .edit:hover
+{
+    background-color: grey;
+    color: white;
+}
+.hidden 
+{
+    display: none;
+}
+.show 
+{
+    display: block;
+}
+.footer 
+{
+    background-color: #686868;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+    }
+    .logoRWD 
+    {
+        margin: auto;
+        height: auto;
+        width: 100%;
+
+    }
+    .main_header{
+        width: 100%;
+        font-size: 15px;
+    }
+    .menu > li
+    {
+        display: block;
+        padding: 10px;
+        padding-right: 15px;
+
+    }
+    main
+    {
+        width: 100%;
+    }
+   label
+   {
+        display: block;
+        width: 100%;
+        text-align:center;
+    }
+    input, select
+    {
+        width: 100%;
+        text-align: center;
+    }
+    #address, #mobile, #city
+    {
+        width: 100%;
+    }   
+    #radio 
+    {
+        text-align: center;
+        display: block;
+    }
+    .button
+    {
+        display: block;
+        font-size: 12px;
+        border-radius: 5px;
+        width: 100%;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px;
+        border: 0px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+    #prefix_mobile, #postcode, #nr_address
+    {
+        width: 100%;
+    }
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .main_header
+    {
+        width: 75%;  
+        font-size: 20px;
+    }
+    .logoRWD 
+    {
+        margin: auto;
+        height: auto;
+        max-width: 400px;
+
+    }
+    .menu > li
+    {
+        display: inline-block;
+        padding: 15px;
+        padding-right: 15px;
+        border-left: 1px dashed #fff;
+    }
+    .menu > li:last-child
+    {
+        border-right: 1px dashed #fff;
+
+    }
+    main
+    {
+    max-width: 800px;
+    }
+    label 
+    {
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+        color: #686868;
+    }
+    input, select
+    {
+        width: 75%;
+        text-align: left;
+    }
+    #address, #mobile, #city
+    {
+        width: 60%;
+    }   
+    #radio 
+    {
+        text-align: center;
+        display: inline-block;
+    }
+    #prefix_mobile, #postcode, #nr_address
+    {
+        width: 15%;
+    }
+
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    nav
+    {
+        display: block;
+    }
+    .main_header
+    {
+        width: 75%;   
+        font-size: 20px; 
+    }
+    .logoRWD 
+    {
+        margin: auto;
+        height: auto;
+        max-width: 400px;
+
+    }
+    .menu > li
+    {
+        display: inline-block;
+        padding: 15px;
+        padding-right: 15px;
+        border-left: 1px dashed #fff;
+    }
+    .menu > li:last-child
+    {
+        border-right: 1px dashed #fff;
+
+    }
+    main
+    {
+    max-width: 800px;
+    }
+    label 
+    {
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+        color: #686868;
+    }
+    input, select
+    {
+        width: 75%;
+        text-align: left;
+    }
+    #address, #mobile, #city
+    {
+        width: 60%;
+    }  
+    #radio 
+    {
+        text-align: center;
+        display: inline-block;
+    }  
+    .button
+    {
+        display: inline-block;
+        width: 100px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-right: 10px;
+    }
+    #prefix_mobile, #postcode, #nr_address
+    {
+        width: 15%;
+    }
+
+}
+  
+.nameError {
+    display: none;
+    text-align: center;
+    margin: 5px;
+    color: red;
+    border: 1px solid red;
+    padding: 5px;
+  }
+  
+  input.invalid {
+    border-color: red;
+  }
+  input.valid {
+    border-color: #ced4da;
+  }

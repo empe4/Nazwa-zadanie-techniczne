@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Helostar - Firma spedycyjna, transport morski, lotniczy kompleksowe uslugi transportowe</title>
+    <meta name="description" content="Firma spedycyjna Helostar oferuje uslugi z zakresu transportu morskiego, lotniczego i kolejowego. Kompleksowe uslugi transportowe swiadczymy od 2009 roku, nasza siedzima znajduje sie w Warszawie.">
+    <meta name="keywords" content="firma spedycyjna, helostar, transport morski, transport lotniczy, transport kolejowy, kompleksowe uslugi, uslugi transportowe">
+    <meta name="author" content="Helostar">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header>
+    <div class="logo_containter">
+        <img src="img/helostar_logo.jpg" alt="Firma spedycyjna Helostar" title="Firma spedycyjna Helostar" class="logoRWD">
+    </div>
+    <nav class="menu_main">
+        <ul class="menu">
+            <li class="current"><a href="index.html">Glowna</a></li>
+            <li><a href="#">Uslugi</a></li>
+            <li><a href="#">Cennik</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <main>
+        <article>
+            <section>
+                <header>
+                    <div class="main_header">
+                        <h1 id="pageTitle">Dane identyfikacyjne</h1>
+                    </div>
+                </header>
+            </section>
+
+        </article>
+
+            <section id="mainPage">
+                <form id="detailsForm">
+
+                    <div class="form_line status">
+                        <label for="status">Status prawny:</label>
+                        <div id="radio">
+                            <span id="radioStatus">
+                                <input type="radio" id="status" name="status" value="0" checked="checked"> Klient indywidualny
+                                <input type="radio" id="status" name="status" value="1"> Firma 
+                            </span>
+
+                        </div>
+                    </div>  
+                    <div id="display_status">           
+                        <div class="form_line">
+                            <label for="name">Imie i nazwisko:</label>
+                            <input type="text" id="name" required>
+                        </div>
+                    </div>              
+                    <div id="display_status" style="display: none;">
+                        <div class="form_line">
+                            <label for="company">Firma: </label>
+                            <input type="text" id="company">
+                        </div> 
+                    </div>
+                    <div class="form_line">
+                        <label for="address">Ulica, nr domu: </label>
+                        <input type="text" id="address">
+                        <input type="text" id="nr_address">
+                    </div>  
+                    <div class="form_line">
+                        <label for="city">Miejscowosc, kod pocztowy</label>
+                        <input type="text" id="city">
+                        <input type="text" id="postcode">
+                    </div>  
+                    <div class="form_line">
+                        <label for="county">Wojewodztwo</label>
+                        <select id="county" name="county">
+                            <!-- endpoint here -->
+                        </select>
+                    </div>  
+                    <div class="form_line">
+                        <label for="mobile">Telefon: </label>
+                        <input type="text" id="prefix_mobile" value="+48" >
+                        <input type="tel" id="mobile" pattern="[0-9]*">
+                    </div> 
+                    <div class="form_line">
+                        <label for="mobile">Email: </label>
+                        <input type="email" id="email">
+                    </div> 
+                    <div id="display_status">
+                        <div class="form_line">
+                            <label for="pesel">PESEL: </label>
+                            <input type="text" id="pesel">
+                        </div> 
+                    </div> 
+                    <div id="display_status" style="display: none;">
+                        <div class="form_line">
+                            <label for="nip">NIP: </label>
+                            <input type="text" id="nip">
+                        </div> 
+                    </div> 
+                    <span class="nameError"> Please enter Full Name </span>
+                    <div class="form_line">      
+                        <div id="btnDiv" style="text-align: right;">
+                            <button type="reset" class="button cancel">Anuluj</button>
+                            <button class="button save">Zapisz</button>
+                        </div> 
+
+                    </div>
+
+                </form>
+            </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            Copyright by HELOSTAR.com @ 2022.
+        </div>
+    </footer>
+</body>
+</html>
